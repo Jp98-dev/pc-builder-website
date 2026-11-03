@@ -1,9 +1,30 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --background-color: #d3d3d3;
+  --text-color: #000000;
+  --highlight-color: #2f00ff;
+}
+
+nav {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+a {
+  text-decoration: none;
+}
+
 body {
-  background-color: lightgray;
+  background-color: var(--background-color);
 }
 
 main {
   gap: 2rem;
+  padding: 1rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -19,6 +40,9 @@ main {
 @media screen and (max-width: 1400px) {
   main {
     margin-inline: auto;
-    
+  }
+
+  header {
+    padding: 1rem;
   }
 }
