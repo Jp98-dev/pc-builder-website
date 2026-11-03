@@ -3,10 +3,22 @@ body {
 }
 
 main {
-  display: flex;
   gap: 2rem;
 }
 
-section {
-  flex: 1;
+@media screen and (min-width: 768px) {
+  main {
+    display: flex;
+  }
+
+  section {
+    flex: 1;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  main {
+    margin-inline: auto;
+    
+  }
 }
